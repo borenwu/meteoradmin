@@ -1,0 +1,27 @@
+<template name="subMenuElement">
+	
+	<li class="{{#if active}}active{{/if}} {{#if subMenuElements}}treeview{{/if}}">
+		<a href="{{url}}">
+			<i class="fa fa-circle-o"></i>
+			<span>{{menuName}}</span>
+			<span class="pull-right-container">
+				{{#if rightIcon}}
+					<span class="fa {{rightIcon}} pull-right"></span>
+				{{else}}
+					<span class="label pull-right"></span>
+				{{/if}}
+				{{#if labels}}
+					{{#each labels}}
+						{{> labelElement}}
+					{{/each}}
+				{{/if}}			
+			</span>
+		</a>
+		<ul class="treeview-menu">
+			{{#each subMenuElements}}
+				{{> subMenuElement}}
+			{{/each}}
+		</ul>
+	</li>
+	
+</template>

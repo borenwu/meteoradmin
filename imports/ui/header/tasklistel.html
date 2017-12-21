@@ -1,0 +1,16 @@
+<template name='taskListElement'>
+  <li><!-- Task item -->
+    <a href="#">
+      <h3>
+        {{message}}
+        <small class="pull-right">{{percentvalue}}%</small>
+      </h3>
+      <div class="progress xs">
+        <div class="progress-bar {{barcolor}}" style="width: {{percentvalue}}%" role="progressbar"
+         aria-valuenow='20' aria-valuemin="0" aria-valuemax="100">
+          <span class="sr-only">{{percentvalue}}% Complete</span>
+        </div>
+      </div>
+    </a>
+  </li>
+</template>

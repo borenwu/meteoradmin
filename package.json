@@ -1,0 +1,19 @@
+{
+  "name": "workaround01",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "admin-lte": "^2.4.2",
+    "babel-runtime": "^6.20.0",
+    "bootstrap": "^3.3.7",
+    "download.jqueryui.com": "^2.1.15",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "meteor-node-stubs": "~0.2.4",
+    "node-packager": "0.0.6",
+    "shelljs": "^0.7.8",
+    "tether": "^1.4.0"
+  }
+}
